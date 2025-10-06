@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">...</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario-contato">
+            <h2>Entre em Contato</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="localizacao">
+            <h3>Nossa Localização</h3>
+            <article class="mapa-container">
+                <iframe src="LINK_DO_MAPA_EMBED_DO_GOOGLE_MAPS" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da Sede"></iframe>
+            </article>
+            <aside>
+                <p>Endereço: Rua Exemplo, 123 - Cidade, Estado, País</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Meu Portfólio &copy; 2024 - Todos os direitos reservados.</p>
+        <button id="btnVoltarTopo">Voltar ao Topo</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
