@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const assunto = document.getElementById('assunto').value.trim();
             const mensagem = document.getElementById('mensagem').value.trim();
 
-            // Validação simples: verificar se os campos estão preenchidos
             if (nome === '' || email === '' || assunto === '' || mensagem === '') {
                 alert('Por favor, preencha todos os campos do formulário antes de enviar.');
                 return; 
