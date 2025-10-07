@@ -12,9 +12,6 @@ body {
     color: #333;
 }
 
-/* -------------------- */
-/* Requisito: HEADER & NAV */
-/* -------------------- */
 header {
     background: #333;
     color: #fff;
@@ -25,8 +22,13 @@ header {
 }
 
 .logo img {
-    height: 40px; /* Ajuste o tamanho do logotipo */
+    height: 60px;
     vertical-align: middle;
+}
+
+img {
+    height: 500px;
+    justify-content:center;
 }
 
 .logo h1 {
@@ -48,14 +50,11 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active { /* Classe Reutilizável: active */
+nav ul li a.active {
     background-color: #555;
     border-radius: 5px;
 }
 
-/* -------------------- */
-/* Requisito: MAIN & SECTION */
-/* -------------------- */
 main {
     padding: 20px;
     min-height: 70vh;
@@ -69,10 +68,10 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Classe Reutilizável: video-container */
+
 .video-container, .mapa-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     margin-top: 15px;
@@ -86,9 +85,6 @@ section {
     height: 100%;
 }
 
-/* -------------------- */
-/* Requisito: FOOTER */
-/* -------------------- */
 footer {
     background: #333;
     color: #fff;
@@ -102,9 +98,6 @@ footer a {
     margin: 0 10px;
 }
 
-/* -------------------- */
-/* Requisito: MEDIA QUERIES (Responsividade) */
-/* -------------------- */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -122,7 +115,6 @@ footer a {
     }
 }
 
-/* Estilização específica para contato.html */
 #contactForm div {
     margin-bottom: 15px;
 }
