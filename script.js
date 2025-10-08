@@ -15,14 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Por favor, preencha todos os campos do formulário antes de enviar.');
                 return; 
             }
-
-            
+         
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert('Por favor, insira um endereço de e-mail válido.');
                 return;
             }
-
             
             alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
             form.reset(); 
@@ -50,4 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+});
+    }
+
 });
